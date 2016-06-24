@@ -10,7 +10,7 @@
 			<p>Leandro no Github</p>
 		</nav>
 		<div id='app' class="w3-row">
-			<div class="w3-third w3-border w3-round-xlarge w3-indigo w3-center w3-padding-24" v-for="unidade in lista">
+			<div class="w3-third w3-border w3-round-xlarge w3-indigo w3-center w3-padding-24" v-for="unidade in lista" v-if="!unidade.fork">
 				<a href="{{unidade.html_url}}">
 					<img src="{{unidade.owner.avatar_url}}" class="w3-left w3-circle" style="width:60px">
 			        <p class="w3-small">{{unidade.name}}</p>
